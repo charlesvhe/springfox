@@ -1,7 +1,7 @@
 ﻿## springfox-bean-validators
 springfox-bean-validators是一组springfox-swagger2 plugin，使springfox swagger更完善的支持bean-validators。
 
-与springfox官方springfox-bean-validators的区别是支持了validation的group分组(分组的详细用法 https://www.cnblogs.com/beiyan/p/5946345.html)，并且支持复用pojo。
+与springfox官方springfox-bean-validators的区别是支持了validation的group分组(分组的详细用法 https://www.cnblogs.com/beiyan/p/5946345.html )，并且支持复用pojo。
 
 在一般使用中，不同的请求，pojo非常类似，只有个别字段的区别，如果为了产生完美的swagger文档，那么就不得不写大量相似的pojo，非常不简洁不优雅，这个项目复用了@Null注解标识哪些情况下哪些属性应该隐藏，例如添加和修改时提交请求参数不一样、返回列表和详情的返回字段不同等(具体参见demo工程)：
 
@@ -34,6 +34,6 @@ public class Article {
  ...
 ```
 
-![请求]()
+![请求](https://raw.githubusercontent.com/charlesvhe/springfox/master/request.png)
 
-![相应]()
+![相应](https://raw.githubusercontent.com/charlesvhe/springfox/master/response.png)
